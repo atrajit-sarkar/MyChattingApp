@@ -253,7 +253,7 @@ fun SettingsScreen(
                                         // Proceed with uploading the file to GitHub only if file is not null
                                         selectedFile?.let { file ->
                                             uploadToGitHub(
-                                                token = "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",
+                                                token = "",
                                                 owner = "gongobongofounder",
                                                 repo = "MyChattingAppProfilePics",
                                                 filePath = "${specialUri.value}.jpg",
