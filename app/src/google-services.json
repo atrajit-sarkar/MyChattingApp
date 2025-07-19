@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "321253745387",
+    "project_id": "chatingb-app-v2",
+    "storage_bucket": "chatingb-app-v2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321253745387:android:4a868e788c1900f4af54ae",
+        "android_client_info": {
+          "package_name": "com.example.mychattingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkQLUQ7oP7QmoTwwb_QvmabNqa4oVBfGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
