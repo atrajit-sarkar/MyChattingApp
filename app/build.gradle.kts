@@ -13,6 +13,14 @@ android {
     namespace = "com.example.mychattingapp"
     compileSdk = 35
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("release-keystore.jks")
+            storePassword = "ff71f922@1729"
+            keyAlias = "release-key"
+            keyPassword = "ff71f922@1729"
+        }
+    }
 
     defaultConfig {
         applicationId = "com.example.mychattingapp"
@@ -29,11 +37,13 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
@@ -47,7 +57,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.15"
     }
     packaging {
         resources {
